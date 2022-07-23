@@ -1,7 +1,13 @@
+Write-Host @'
+------------------
+This is Save?
+yes.. 100% Safe
+------------------
+'@
 param (
   [Parameter()]
   [switch]
-  $UninstallSpotifyStoreEdition = (Read-Host -Prompt 'Uninstall Spotify Windows Store edition if it exists (Y/N)') -eq 'y',
+  $UninstallSpotifyStoreEdition = (Read-Host -Prompt 'Remove Spotify Windows Store edition if it exists? (Y/N)') -eq 'y',
   [Parameter()]
   [switch]
   $UpdateSpotify,
@@ -106,17 +112,16 @@ function Test-SpotifyVersion
 }
 
 Write-Host @'
-*****************
-@mrpond message:
-#Thailand #ThaiProtest #ThailandProtest #freeYOUTH
-Please retweet these hashtag, help me stop dictator government!
+-----------------
+-Status message:
+Patching Success. Enjoy Your Spotify!
 *****************
 '@
 
 Write-Host @'
-*****************
-Authors: @Nuzair46, @KUTlime
-*****************
+-----------------
+Authors: agung_jays
+-----------------
 '@
 
 $spotifyDirectory = Join-Path -Path $env:APPDATA -ChildPath 'Spotify'
@@ -358,9 +363,7 @@ Start-Process -WorkingDirectory $spotifyDirectory -FilePath $spotifyExecutable
 Write-Host 'Done.'
 
 Write-Host @'
-*****************
-@mrpond message:
-#Thailand #ThaiProtest #ThailandProtest #freeYOUTH
-Please retweet these hashtag, help me stop dictator government!
-*****************
+------------------
+Testing 123
+------------------
 '@
