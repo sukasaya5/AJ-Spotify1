@@ -1,7 +1,7 @@
 param (
   [Parameter()]
   [switch]
-  $UninstallSpotifyStoreEdition = (Read-Host -Prompt 'Remove Spotify Windows Store edition if it exists? (Y/N)') -eq 'y',
+  $UninstallSpotifyStoreEdition = (Read-Host -Prompt 'Uninstall Spotify Windows Store edition if it exists (Y/N)') -eq 'y',
   [Parameter()]
   [switch]
   $UpdateSpotify,
@@ -106,16 +106,17 @@ function Test-SpotifyVersion
 }
 
 Write-Host @'
------------------
--Status message:
-Patching Success. Enjoy Your Spotify!
+*****************
+@mrpond message:
+#Thailand #ThaiProtest #ThailandProtest #freeYOUTH
+Please retweet these hashtag, help me stop dictator government!
 *****************
 '@
 
 Write-Host @'
------------------
-Authors: agung_jays
------------------
+*****************
+Authors: @Nuzair46, @KUTlime
+*****************
 '@
 
 $spotifyDirectory = Join-Path -Path $env:APPDATA -ChildPath 'Spotify'
@@ -357,7 +358,9 @@ Start-Process -WorkingDirectory $spotifyDirectory -FilePath $spotifyExecutable
 Write-Host 'Done.'
 
 Write-Host @'
-------------------
-Testing 123
-------------------
+*****************
+@mrpond message:
+#Thailand #ThaiProtest #ThailandProtest #freeYOUTH
+Please retweet these hashtag, help me stop dictator government!
+*****************
 '@
