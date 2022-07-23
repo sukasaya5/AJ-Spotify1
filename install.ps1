@@ -1,9 +1,3 @@
-Write-Host @'
-------------------
-This is Save?
-yes.. 100% Safe
-------------------
-'@
 param (
   [Parameter()]
   [switch]
